@@ -32,13 +32,16 @@
             this.nombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.alturaBox = new System.Windows.Forms.TextBox();
+            this.Altura = new System.Windows.Forms.RadioButton();
             this.Longitud = new System.Windows.Forms.RadioButton();
             this.Bonito = new System.Windows.Forms.RadioButton();
-            this.Altura = new System.Windows.Forms.RadioButton();
-            this.alturaBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.contLbl = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +91,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Altura:";
+            // 
+            // alturaBox
+            // 
+            this.alturaBox.Location = new System.Drawing.Point(28, 114);
+            this.alturaBox.Name = "alturaBox";
+            this.alturaBox.Size = new System.Drawing.Size(52, 20);
+            this.alturaBox.TabIndex = 10;
+            // 
+            // Altura
+            // 
+            this.Altura.AutoSize = true;
+            this.Altura.Location = new System.Drawing.Point(116, 114);
+            this.Altura.Name = "Altura";
+            this.Altura.Size = new System.Drawing.Size(98, 17);
+            this.Altura.TabIndex = 9;
+            this.Altura.TabStop = true;
+            this.Altura.Text = "Dime si soy alto";
+            this.Altura.UseVisualStyleBackColor = true;
+            // 
             // Longitud
             // 
             this.Longitud.AutoSize = true;
@@ -110,33 +140,6 @@
             this.Bonito.Text = "Dime si mi nombre es bonito";
             this.Bonito.UseVisualStyleBackColor = true;
             // 
-            // Altura
-            // 
-            this.Altura.AutoSize = true;
-            this.Altura.Location = new System.Drawing.Point(116, 114);
-            this.Altura.Name = "Altura";
-            this.Altura.Size = new System.Drawing.Size(98, 17);
-            this.Altura.TabIndex = 9;
-            this.Altura.TabStop = true;
-            this.Altura.Text = "Dime si soy alto";
-            this.Altura.UseVisualStyleBackColor = true;
-            // 
-            // alturaBox
-            // 
-            this.alturaBox.Location = new System.Drawing.Point(28, 114);
-            this.alturaBox.Name = "alturaBox";
-            this.alturaBox.Size = new System.Drawing.Size(52, 20);
-            this.alturaBox.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Altura:";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(110, 74);
@@ -155,11 +158,42 @@
             this.button3.Text = "Desconectar";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(489, 145);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(175, 34);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Cuántas conexiones?";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(541, 205);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(7, 13);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "\r\n";
+            // 
+            // contLbl
+            // 
+            this.contLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contLbl.Location = new System.Drawing.Point(504, 195);
+            this.contLbl.Name = "contLbl";
+            this.contLbl.Size = new System.Drawing.Size(148, 92);
+            this.contLbl.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(741, 562);
+            this.Controls.Add(this.contLbl);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
@@ -169,6 +203,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -185,6 +220,9 @@
         private System.Windows.Forms.RadioButton Altura;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label contLbl;
     }
 }
 
